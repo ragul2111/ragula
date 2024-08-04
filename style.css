@@ -1080,54 +1080,50 @@ body {
   }
 </style>
 
-
-
-
-
+     
 
     <style>
-  /* Navbar styling */
-  .navbar {
-    background-color: #333; /* Adjust this color as needed */
-  }
-
-  .navbar-brand {
-    font-size: 1.5rem;
-    color: #fff;
-  }
-
-  .nav-link {
-    color: #fff;
-    font-size: 1.2rem;
-    margin: 0 10px;
-  }
-<style>
-  /* General styles for the navbar */
+  /* Base styles for the navbar */
   .navbar {
     background-color: #333;
+    padding: 1rem;
   }
 
-  .nav-link {
+  .navbar-nav .nav-link {
     color: #fff;
-    padding: 10px 15px;
+    padding: 0.5rem 1rem;
   }
 
-  .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.5);
+  .navbar-nav .nav-link:hover {
+    color: #ddd;
   }
 
-  /* Media query for mobile devices */
+  /* 3D transform effect for mobile */
   @media (max-width: 768px) {
-    .navbar-nav {
-      display: none; /* Hide the nav links */
+    .navbar {
+      perspective: 1000px; /* Adds perspective for the 3D effect */
+    }
+
+    .navbar-collapse {
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+
+    .navbar-collapse.show {
+      transform: rotateY(0deg);
+    }
+
+    .navbar-collapse {
+      transform: rotateY(-10deg); /* Slight rotation to create the 3D effect */
     }
 
     .navbar-toggler {
-      display: block; /* Ensure the toggle button is visible */
+      transform: rotateY(10deg);
+      transition: transform 0.6s;
     }
 
-    .navbar-collapse.show .navbar-nav {
-      display: block; /* Show the nav links when the navbar is expanded */
+    .navbar-toggler.collapsed {
+      transform: rotateY(0deg);
     }
   }
 </style>
