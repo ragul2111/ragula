@@ -7,6 +7,25 @@ h3, h2 {
     
 }
 
+@media only screen and (max-width: 768px)  
+ {
+    ..........
+}
+
+
+@media only screen and (min width: 992px)
+    (max-width: 1023px)  
+ {
+    ...........
+} 
+
+@media only screen and (min-width: 1024px)  
+ {
+    ..........
+}
+
+
+
 /* 3D Effect for Button */
 .btn-custom {
     background-color: #ffc107;
