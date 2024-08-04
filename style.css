@@ -1046,3 +1046,38 @@ body {
     }
   }
 </style>
+
+
+     <style>
+  .section {
+    padding: 60px 0;
+  }
+
+  .intro-container {
+    margin-top: 50px;
+  }
+
+  .head-text {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .head-text {
+      font-size: 2rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+    }
+
+    .intro-container {
+      margin-top: 30px;
+    }
+  }
+</style>
