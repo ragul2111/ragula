@@ -1101,20 +1101,33 @@ body {
     font-size: 1.2rem;
     margin: 0 10px;
   }
+<style>
+  /* General styles for the navbar */
+  .navbar {
+    background-color: #333;
+  }
+
+  .nav-link {
+    color: #fff;
+    padding: 10px 15px;
+  }
+
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+  }
 
   /* Media query for mobile devices */
   @media (max-width: 768px) {
-    .navbar-collapse {
-      text-align: center; /* Center align navbar items */
-    }
-
-    .nav-link {
-      font-size: 1rem; /* Slightly smaller font size for mobile */
-      margin: 5px 0; /* Add margin between items on mobile */
+    .navbar-nav {
+      display: none; /* Hide the nav links */
     }
 
     .navbar-toggler {
-      margin-right: 10px; /* Add margin to the toggler on the right side */
+      display: block; /* Ensure the toggle button is visible */
+    }
+
+    .navbar-collapse.show .navbar-nav {
+      display: block; /* Show the nav links when the navbar is expanded */
     }
   }
 </style>
