@@ -1079,3 +1079,42 @@ body {
     }
   }
 </style>
+
+
+
+
+
+
+    <style>
+  /* Navbar styling */
+  .navbar {
+    background-color: #333; /* Adjust this color as needed */
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .nav-link {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 10px;
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      text-align: center; /* Center align navbar items */
+    }
+
+    .nav-link {
+      font-size: 1rem; /* Slightly smaller font size for mobile */
+      margin: 5px 0; /* Add margin between items on mobile */
+    }
+
+    .navbar-toggler {
+      margin-right: 10px; /* Add margin to the toggler on the right side */
+    }
+  }
+</style>
