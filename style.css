@@ -1048,13 +1048,10 @@ body {
 </style>
 
 
-     <style>
-  .section {
-    padding: 60px 0;
-  }
-
+    <style>
   .intro-container {
     margin-top: 50px;
+    text-align: center;
   }
 
   .head-text {
@@ -1078,6 +1075,7 @@ body {
 
     .intro-container {
       margin-top: 30px;
+      padding: 0 15px; /* Add padding for better spacing on small screens */
     }
   }
 </style>
